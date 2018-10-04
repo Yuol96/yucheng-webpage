@@ -25,6 +25,16 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 		url: '/courses',
 		templateUrl: 'templates/courses.view.html'
 	})
+	.state('leetcodeView', {
+		url: '/leetcode',
+		templateUrl: 'templates/leetcode.view.html',
+		controller: 'leetcodeController as leetcodeController',
+		resolve: {
+			leetcodeInfo: ['dataService', function(dataService){
+				return dataService.getLeetcodeInfo();
+			}]
+		}
+	})
 	;
 }
 

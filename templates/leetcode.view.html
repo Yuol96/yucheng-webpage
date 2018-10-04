@@ -1,0 +1,41 @@
+<div class="container">
+	<p>In order to hone my algorithm skills, I have been continuing working on leetcode questions since August 2018. To put more focus on algorithms, I choose python3 as my programming language, since it seems to be easier to implement an idea. Most of the questions listed below have one solution, while some of the questions have multiple versions of solution. </p>
+	<p>For more details, please visit my <a href="https://github.com/Yuol96/leetcode-notes">github repo</a>.</p>
+
+	<p>There are {{leetcodeController.stat.totalNum}} in total, including {{leetcodeController.stat.difficultyCount.easy}} easy questions, {{leetcodeController.stat.difficultyCount.medium}} medium questions, and {{leetcodeController.stat.difficultyCount.hard}} hard questions.</p>
+
+	<div ng-repeat="(category, infoList) in leetcodeController.category2infoList">
+		<h2>{{category}}</h2>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Difficulty</th>
+					<th scope="col">Question</th>
+					<th scope="col">Solutions</th>
+					<th scope="col">Tags</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="info in infoList">
+					<th scope="row">{{$index}}</th>
+					<th>{{info.difficulty}}</th>
+					<th><a ng-href="{{info.link}}">{{info.id}}. {{info.name}}</a></th>
+					<th>
+						<span ng-repeat="version in info.version">
+							<span ng-if="$index>0">,</span>
+							<a ng-href="https://github.com/Yuol96/leetcode-notes/blob/master/solutions/{{info.id}}.py" ng-if="version==='solution'">{{version}}</a>
+							<a ng-href="https://github.com/Yuol96/leetcode-notes/blob/master/solutions/{{info.id}}.{{version}}.py" ng-if="version!=='solution'">{{version}}</a>
+						</span>
+					</th>
+					<th>
+						<span ng-repeat="tag in info.tags">
+							<span ng-if="$index>0">,</span>
+							{{tag}}
+						</span>
+					</th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
