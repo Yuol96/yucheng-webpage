@@ -1,0 +1,26 @@
+<div class="container">
+	<div ng-repeat="(category, infoList) in courseController.courseraInfo">
+		<h2>{{category}}</h2>
+		<div class="row" ng-repeat="info in infoList">
+			<div class="col-md-2">
+				<img src="{{info.img}}" alt="picture_{{$index}}" class="img-thumbnail rounded">
+			</div>
+			<div class="col-md-8">
+				<p>
+					<a ng-href="{{info.link}}"><h5>{{info.name}} <span ng-if="info.specialization">(Specialization Courses)</span></h5></a>
+					<i>{{info.university}}</i>
+					<br>
+					<a ng-href="{{info.certificate}}">[<span ng-if="info.specialization">Specialization </span>Certificate]</a>
+					<span ng-if="info.specialization">
+						<br>
+						Sub-course certificates:
+						<span ng-repeat="course in info.courses">
+							&nbsp;
+							<a ng-href="{{course.certificate}}">[{{$index+1}}]</a>
+						</span>
+					</span>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

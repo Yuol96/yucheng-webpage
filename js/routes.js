@@ -23,7 +23,13 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 	})
 	.state('courseView', {
 		url: '/courses',
-		templateUrl: 'templates/courses.view.html'
+		templateUrl: 'templates/courses.view.html',
+		controller: 'courseController as courseController',
+		resolve: {
+			courseraInfo: ['dataService', function(dataService){
+				return dataService.getCourseraInfo();
+			}]
+		}
 	})
 	.state('leetcodeView', {
 		url: '/leetcode',

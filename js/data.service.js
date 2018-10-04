@@ -16,6 +16,15 @@ function dataService($http) {
 			return response.data;
 		});
 	};
+
+	service.getCourseraInfo = function () {
+		return $http({
+			method: "GET",
+			url: 'data/coursera.json'
+		}).then(function(response){
+			return response.data;
+		});
+	};
 }
 
 })();
