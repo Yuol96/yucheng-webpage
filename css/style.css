@@ -2,3 +2,33 @@ img {
 	width: 100%;
 	height: auto;
 }
+
+header {
+	margin-top: 30px;
+}
+header h1 {
+	color: #666;
+}
+
+#tabs {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+#tabs a{
+	color: black;
+}
+#tabs a:hover{
+	background-color: #EEE;
+	color: blue;
+}
+
+#courseContainer h2{
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.courseItem hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 80%;
+
+}

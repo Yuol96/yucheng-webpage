@@ -1,7 +1,8 @@
-<div class="container">
+<div id="courseContainer" class="container">
 	<div ng-repeat="(category, infoList) in courseController.courseraInfo">
 		<h2>{{category}}</h2>
-		<div class="row" ng-repeat="info in infoList">
+		<div class="row courseItem" ng-repeat="info in infoList">
+			<div class="col-md-12"><hr align="left" ng-if="$index>0"></div>
 			<div class="col-md-2">
 				<img src="{{info.img}}" alt="picture_{{$index}}" class="img-thumbnail rounded">
 			</div>
