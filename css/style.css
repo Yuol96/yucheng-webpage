@@ -41,3 +41,13 @@ div.accordion div.card button.btn {
 div.accordion {
 	margin-bottom: 40px;
 }
+.paper-state {
+	font-weight: bold;
+	font-size: 1.15em;
+	color: #00CC00;
+
+}
+.collapse {
+	max-height: 210px;
+	overflow: scroll;
+}
