@@ -1,4 +1,7 @@
 <div id="courseContainer" class="container">
+	<div>
+		The courses listed below are taken from <a href="https://www.coursera.org" target="_blank">coursera.org</a>.
+	</div>
 	<div ng-repeat="(category, infoList) in courseController.courseraInfo">
 		<h2>{{category}}</h2>
 		<div class="row courseItem" ng-repeat="info in infoList">
@@ -8,16 +11,16 @@
 			</div>
 			<div class="col-md-8">
 				<p>
-					<a ng-href="{{info.link}}"><h5>{{info.name}} <span ng-if="info.specialization">(Specialization Courses)</span></h5></a>
+					<a ng-href="{{info.link}}" target="_blank"><h5>{{info.name}} <span ng-if="info.specialization">(Specialization Courses)</span></h5></a>
 					<i>{{info.university}}</i>
 					<br>
-					<a ng-href="{{info.certificate}}">[<span ng-if="info.specialization">Specialization </span>Certificate]</a>
+					<a ng-href="{{info.certificate}}" target="_blank">[<span ng-if="info.specialization">Specialization </span>Certificate]</a>
 					<span ng-if="info.specialization">
 						<br>
 						Sub-course certificates:
 						<span ng-repeat="course in info.courses">
 							&nbsp;
-							<a ng-href="{{course.certificate}}">[{{$index+1}}]</a>
+							<a ng-href="{{course.certificate}}" target="_blank">[{{$index+1}}]</a>
 						</span>
 					</span>
 				</p>
