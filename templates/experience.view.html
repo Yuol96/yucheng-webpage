@@ -5,17 +5,20 @@
         <div class="card-header" id="heading1">
           <div class="row">
             <div class="col-md-3"><img src="imgs/experience/SiameseRPN.png" alt="" class="img-thumbnail rounded"></div>
-            <div class="col-md-8">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                <h5>One-shot Object Detection</h5>
-              </button>
+            <div class="col-md-7">
+              <h5>One-shot Object Detection</h5>
               <div><span class="font-italic">Aug 2018 - Dec 2018</span></div>
               <div class="font-weight-bold">Face++ (Megvii Technology Ltd.) | Intern</div>
               <div><a href="https://github.com/Yuol96/Siam-RPN" target="_blank">[Part of my PyTorch code]</a></div>
             </div>
+            <div class="col-md-2 text-right">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                >> Learn more
+              </button>
+            </div>
           </div>
         </div>
-        <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionCS">
+        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionCS">
           <div class="card-body">
             "One-shot Object Detection" is intended to detect untrained objects among images or videos given a template img/video of the target object. I found a Siamese Region Proposal Network aimed at object tracking from <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_High_Performance_Visual_CVPR_2018_paper.pdf" target="_blank">a CVPR18 paper</a> which showed great promise for this project. I implemented this model and adapted it for object detection tasks, but it did not work. Following common practices for analyzing deep networks, I analyzed intermediate outputs and realized that it was the lack of generalizability that impeded the training process. To tackle this problem, I changed the backbone CNN module to improve model capacity, which luckily increased the mean average precision performance significantly. Furthermore, by visualizing the detection outcomes, I analyzed the false positive bounding boxes and concluded that the datasets for object detection exhibited more variations and thus gave rise to more inter-class misclassification. To address this problem, I redesigned the hard sample mining strategy to help focus the training on differentiating objects of different categories. Moreover, I borrowed the “attention” idea from <a href="https://arxiv.org/abs/1807.06521" target="_blank">an ECCV18 paper</a> and introduced a Convolutional Block Attention Module to help the model concentrate on potential regions and refine the feature maps.
           </div>
@@ -25,13 +28,16 @@
         <div class="card-header" id="heading2">
           <div class="row">
             <div class="col-md-3"><img src="imgs/experience/Eiffel.png" alt="" class="img-thumbnail rounded"></div>
-            <div class="col-md-8">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                <h5>Evolutionary Flow Map for Influence Graph Visualization</h5>
-              </button>
+            <div class="col-md-7">
+              <h5>Evolutionary Flow Map for Influence Graph Visualization</h5>
               <div><span class="font-italic">May 2018 - Oct 2018</span>&nbsp;&nbsp;<span class="paper-state">PAPER&nbsp;SUBMITTED</span></div>
               <div class="font-weight-bold">Institute of Software, Chinese Academy of Sciences | Researcher</div>
               <div><a href="http://118.190.210.193/eiffel/" target="_blank">[Eiffel Online System]</a></div>
+            </div>
+            <div class="col-md-2 text-right">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                >> Learn more
+              </button>
             </div>
           </div>
         </div>
@@ -47,13 +53,16 @@
         <div class="card-header" id="heading3">
           <div class="row">
             <div class="col-md-3"><img src="imgs/experience/dsab.png" alt="" class="img-thumbnail rounded"></div>
-            <div class="col-md-8">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                <h5>Data Stream Algorithms Benchmark</h5>
-              </button>
+            <div class="col-md-7">
+              <h5>Data Stream Algorithms Benchmark</h5>
               <div><span class="font-italic">Apr 2018 - Nov 2018</span>&nbsp;&nbsp;<span class="paper-state">PAPER&nbsp;SUBMITTED</span></div>
               <div class="font-weight-bold">Peking University | Researcher</div>
               <div><a href="http://www.dsab.tech" target="_blank">[DSAB Online System]</a>&nbsp;<a href="https://github.com/Yuol96/pku-sketch-benchmark">[Github]</a></div>
+            </div>
+            <div class="col-md-2 text-right">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                >> Learn more
+              </button>
             </div>
           </div>
         </div>
@@ -69,13 +78,16 @@
         <div class="card-header" id="heading4">
           <div class="row">
             <div class="col-md-3"><img src="imgs/experience/significant.png" alt="" class="img-thumbnail rounded"></div>
-            <div class="col-md-8">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                <h5>Finding Significant Items in Data Streams</h5>
-              </button>
+            <div class="col-md-7">
+              <h5>Finding Significant Items in Data Streams</h5>
               <div><span class="font-italic">Nov 2017 - May 2018</span>&nbsp;&nbsp;<span class="paper-state">PAPER&nbsp;ACCEPTED</span></div>
               <div class="font-weight-bold">Peking University | Researcher</div>
               <div><a href="https://github.com/Finding-Significant-Items/Finding-Significant-Items">[Github]</a></div>
+            </div>
+            <div class="col-md-2 text-right">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                >> Learn more
+              </button>
             </div>
           </div>
         </div>
@@ -94,13 +106,16 @@
         <div class="card-header" id="heading2_1">
           <div class="row">
             <div class="col-md-3"><img src="imgs/experience/3d.png" alt="" class="img-thumbnail rounded"></div>
-            <div class="col-md-9">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2_1" aria-expanded="true" aria-controls="collapse2_1">
-                <h5>Ultraflat 3D Graphene towards Bioelectronic Applications</h5>
-              </button>
+            <div class="col-md-7">
+              <h5>Ultraflat 3D Graphene towards Bioelectronic Applications</h5>
               <div><span class="font-italic">May 2017 - Aug 2017</span></div>
               <div class="font-weight-bold">The University of Chicago | Researcher</div>
               <div><a href="imgs/experience/poster.pdf" target="_blank">[Poster]</a></div>
+            </div>
+            <div class="col-md-2 text-right">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2_1" aria-expanded="true" aria-controls="collapse2_1">
+                >> Learn more
+              </button>
             </div>
           </div>
         </div>
@@ -114,13 +129,16 @@
         <div class="card-header" id="heading2_2">
           <div class="row">
             <div class="col-md-3"><img src="imgs/experience/PbI2.png" alt="" class="img-thumbnail rounded"></div>
-            <div class="col-md-9">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2_2" aria-expanded="true" aria-controls="collapse2_2">
-                <h5>Low-Temperature Heteroepitaxy of 2D PbI2/Graphene</h5>
-              </button>
+            <div class="col-md-7">
+              <h5>Low-Temperature Heteroepitaxy of 2D PbI2/Graphene</h5>
               <div><span class="font-italic">Oct 2016 - Sept 2017</span>&nbsp;&nbsp;<span class="paper-state">PAPER&nbsp;PUBLISHED</span></div>
               <div class="font-weight-bold">Peking University | Researcher</div>
               <div><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adma.201803194" target="_blank">[Article]</a></div>
+            </div>
+            <div class="col-md-2 text-right">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2_2" aria-expanded="true" aria-controls="collapse2_2">
+                >> Learn more
+              </button>
             </div>
           </div>
         </div>
@@ -136,13 +154,16 @@
         <div class="card-header" id="heading2_3">
           <div class="row">
             <div class="col-md-3"><img src="imgs/experience/graphene.png" alt="" class="img-thumbnail rounded"></div>
-            <div class="col-md-9">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2_3" aria-expanded="true" aria-controls="collapse2_3">
-                <h5>Clean Transfer of Large Graphene Single Crystals</h5>
-              </button>
+            <div class="col-md-7">
+              <h5>Clean Transfer of Large Graphene Single Crystals</h5>
               <div><span class="font-italic">Dec 2016 - Apr 2017</span>&nbsp;&nbsp;<span class="paper-state">PAPER&nbsp;PUBLISHED</span></div>
               <div class="font-weight-bold">Peking University | Researcher</div>
               <div><a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/adma.201700639" target="_blank">[Article]</a></div>
+            </div>
+            <div class="col-md-2 text-right">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2_3" aria-expanded="true" aria-controls="collapse2_3">
+                >> Learn more
+              </button>
             </div>
           </div>
         </div>
@@ -158,13 +179,16 @@
         <div class="card-header" id="heading2_4">
           <div class="row">
             <div class="col-md-3"><img src="imgs/experience/device.png" alt="" class="img-thumbnail rounded"></div>
-            <div class="col-md-9">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2_4" aria-expanded="true" aria-controls="collapse2_4">
-                <h5>Two-dimensional Perovskite Crystals</h5>
-              </button>
+            <div class="col-md-7">
+              <h5>Two-dimensional Perovskite Crystals</h5>
               <div><span class="font-italic">Apr 2016 - Aug 2016</span>&nbsp;&nbsp;<span class="paper-state">PAPER&nbsp;PUBLISHED</span></div>
               <div class="font-weight-bold">Peking University | Researcher</div>
               <div><a href="https://pubs.acs.org/doi/abs/10.1021/jacs.6b11683" target="_blank">[Article]</a></div>
+            </div>
+            <div class="col-md-2 text-right">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2_4" aria-expanded="true" aria-controls="collapse2_4">
+                >> Learn more
+              </button>
             </div>
           </div>
         </div>

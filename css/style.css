@@ -48,6 +48,9 @@ div.accordion {
 
 }
 .collapse {
-	max-height: 210px;
+	/*max-height: 210px;*/
 	overflow: scroll;
+}
+.card h5 {
+	margin-top: 10px;
 }
