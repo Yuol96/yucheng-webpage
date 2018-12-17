@@ -15,7 +15,8 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 	})
 	.state('experienceView', {
 		url: '/experience',
-		templateUrl: 'templates/experience.view.html'
+		templateUrl: 'templates/experience.view.html',
+		contorller: 'experienceController as experienceController'
 	})
 	.state('publicationView', {
 		url: '/publication',

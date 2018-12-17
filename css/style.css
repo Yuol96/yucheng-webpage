@@ -32,3 +32,12 @@ header h1 {
 	width: 80%;
 
 }
+
+/*experience.view.html*/
+div.accordion div.card button.btn {
+	border-left: 0;
+	padding-left: 0;
+}
+div.accordion {
+	margin-bottom: 40px;
+}
