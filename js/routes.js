@@ -34,13 +34,13 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 	})
 	.state('leetcodeView', {
 		url: '/leetcode',
-		templateUrl: 'templates/leetcode.view.html',
-		controller: 'leetcodeController as leetcodeController',
-		resolve: {
-			leetcodeInfo: ['dataService', function(dataService){
-				return dataService.getLeetcodeInfo();
-			}]
-		}
+		templateUrl: 'https://yuol96.github.io/MyNotes/leetcode/notes.html'
+		// controller: 'leetcodeController as leetcodeController',
+		// resolve: {
+		// 	leetcodeInfo: ['dataService', function(dataService){
+		// 		return dataService.getLeetcodeInfo();
+		// 	}]
+		// }
 	})
 	;
 }
