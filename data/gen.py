@@ -2,13 +2,21 @@ import json
 
 def genCourseraData():
 	dct = {
-		'Web': [
+		'Develop': [
 			{
 				'name': 'HTML, CSS, and Javascript for Web Developers',
 				'certificate': 'https://www.coursera.org/account/accomplishments/certificate/CYZLFKN6FTFP',
 				'link': 'https://www.coursera.org/learn/html-css-javascript-for-web-developers',
 				'img': 'imgs/coursera/jhep-coursera-course4.jpeg',
 				'university': "John Hopkins University",
+				'specialization': False,
+			},
+			{
+				'name': 'Concurrent Programming in Java',
+				'certificate': 'https://www.coursera.org/account/accomplishments/certificate/QB77Z9N5NS7B',
+				'link': 'https://www.coursera.org/learn/concurrent-programming-in-java',
+				'img': 'imgs/coursera/concurrent.jpeg',
+				'university': "Rice University",
 				'specialization': False,
 			},
 		],
