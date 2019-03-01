@@ -183,6 +183,14 @@ def genCourseraData():
 		],
 		'Basics': [
 			{
+				'name': 'Operating Systems',
+				'certificate': 'https://www.coursera.org/account/accomplishments/certificate/LEUMDCW6D2BY',
+				'link': 'https://www.coursera.org/learn/os-pku',
+				'img': 'imgs/coursera/os_pku.jpg',
+				'university': "Peking University",
+				'specialization': False,
+			},
+			{
 				'name': 'The Unix Workbench',
 				'certificate': 'https://www.coursera.org/account/accomplishments/certificate/8LV65K4JXYWN',
 				'link': 'https://www.coursera.org/learn/unix',
