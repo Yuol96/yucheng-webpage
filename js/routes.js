@@ -13,6 +13,11 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
 		url: '/',
 		templateUrl: 'templates/home.view.html'
 	})
+	.state('cvView', {
+		url: '/cv',
+		templateUrl: 'templates/cv.view.html',
+		// contorller: 'cvController as cvController'
+	})
 	.state('experienceView', {
 		url: '/experience',
 		templateUrl: 'templates/experience.view.html',
