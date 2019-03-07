@@ -191,6 +191,14 @@ def genCourseraData():
 				'specialization': False,
 			},
 			{
+				'name': 'Computer Organization',
+				'certificate': 'https://www.coursera.org/account/accomplishments/certificate/GW32J55D66RX',
+				'link': 'https://www.coursera.org/learn/jisuanji-zucheng',
+				'img': 'imgs/coursera/jisuanjizucheng.jpeg',
+				'university': "Peking University",
+				'specialization': False,
+			},
+			{
 				'name': 'The Unix Workbench',
 				'certificate': 'https://www.coursera.org/account/accomplishments/certificate/8LV65K4JXYWN',
 				'link': 'https://www.coursera.org/learn/unix',
